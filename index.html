@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portafolio WEB</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>JS</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Jeremias Siquinajay</span>, Programador :)</h2>
+                <p class="descripcion">Soy un programador apasionado por la tecnología. Con un enfoque en la disciplina y la profesionalidad, Me esfuerzo por mantenerme actualizado con las últimas tendencias y mejores prácticas en la industria para asegurarme de que cada proyecto en el que trabajo sea de la más alta calidad. Mi objetivo es seguir creciendo como profesional, resolviendo desafíos complejos</p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="foto2.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Jeremias Siquinajay</span> </h2>
+            <h3>Programador Junior</h3>
+            <p>Soy una persona disciplinada, con un buen enfoque para resolver problemas. Constantemente busca mejorar sus habilidades y mantenerse al día con las mejores prácticas</p>
+            <p>Con dedicación y curiosidad, siempre está buscando nuevas formas de mejorar sus habilidades y enfrentarse a desafíos técnicos de manera creativa.</p>
+            <a href="#" id = "mensaje">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">Servicios</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-brands fa-css3-alt"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
+                <p>Creando interfaces atractivas, intuitivas y responsivas, enfocadas en mejorar la experiencia del usuario en todos los dispositivos.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-python"></i></span>
+                <h4>Programación Python</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>BASICO</li>
+                    <li>GUI</li>
+                    <li>POP</li>
+                </ul>
+                <p>Conocimientos sólidos en Python, capaz de desarrollar scripts y aplicaciones para resolver diversos problemas de manera efectiva.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Programación</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>JAVA</li>
+                    <li>PHP</li>
+                    <li>C++</li>
+                </ul>
+                <p>Familiarizado con la programación, desarrollando soluciones eficientes y efectivas para una variedad de proyectos, utilizando diferentes lenguajes y herramientas según las necesidades</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Base de datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>MYSQL</li>
+                    <li>SQLite</li>
+                    <li>MONGOL</li>
+                </ul>
+                <p>Experiencia en manejo de bases de datos, diseñando, gestionando y consultando datos de manera eficiente para apoyar el desarrollo de aplicaciones y la toma de decisiones</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-gears"></i></span>
+                <h4>Electronica</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>BASICO</li>
+                    <li>ARDUINO</li>
+                    <li>CONCEPTOS</li>
+                </ul>
+                <p>Conocimientos en electrónica, diseñando y construyendo circuitos y sistemas electrónicos para diversas aplicaciones, con un enfoque en la resolución de problemas y la innovación técnica.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-wifi"></i></span>
+                <h4>REDES</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>TECNICO</li>
+                    <li>CCNA1</li>
+                    <li>RED LAN</li>
+                </ul>
+                <p>Experiencia en redes LAN, configurando y gestionando redes locales para garantizar una comunicación eficiente y segura entre dispositivos en entornos de trabajo y hogar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Python</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="lenguje1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>HTML y CSS</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="lenguje2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">50%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="lenguje3"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>C++</p>
+                <span class="porcentaje">60%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="lenguje4"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>PHP</p>
+                <span class="porcentaje">55%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="lenguje5"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Java</p>
+                <span class="porcentaje">70%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="lenguje6"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Arduino</p>
+                <span class="porcentaje">75%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="lenguje7"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Maquina expendedora(escolar)</h4>
+                    <p>Colaboré en el desarrollo de una máquina expendedora automatizada utilizando Arduino.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Portafolio</h4>
+                    <p>Se convertira en una plataforma de gestion de proyectos</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Laboratorio</h4>
+                    <p>Desarrollaré un laboratorio de electrónica interactivo que permitirá a los usuarios experimentar con circuitos electrónicos mediante estaciones de trabajo equipadas con herramientas, componentes y kits de prototipado.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Base de datos</h4>
+                    <p>Creación de una base de datos optimizada para almacenar y gestionar datos de manera eficiente, garantizando un rendimiento óptimo y un acceso rápido a la información.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyectovacio.jpg" alt="">
+                <div class="info">
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyectovacio.jpg" alt="">
+                <div class="info">
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
